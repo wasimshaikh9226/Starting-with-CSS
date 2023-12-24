@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Style for all div elements in the document */
+        div {
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Style for a specific div with the class "special" */
+        .special {
+            background-color: #ffc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS for a specific div -->
+    <div style="color: red;">
+        This is a div with inline CSS.
+    </div>
+
+    <!-- Internal CSS is applied here -->
+    <div>
+        This is a div with internal CSS.
+    </div>
+
+    <!-- Internal CSS is applied here, and additional class "special" is added -->
+    <div class="special">
+        This is a special div with internal CSS.
+    </div>
+
+    <!-- External CSS is linked here -->
+    <link rel="stylesheet" href="styles.css">
+
+/* External CSS */
+/* Style for all div elements in the document */
+div {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for a specific div with the class "special" */
+.special {
+    font-weight: bold;
+}
+
+
+
+</body>
+</html>

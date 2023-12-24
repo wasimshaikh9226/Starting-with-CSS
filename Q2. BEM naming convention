@@ -1,1 +1,56 @@
 HTML File (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Example</title>
+
+    <!-- External CSS is linked here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <p class="paragraph">This is a regular paragraph.</p>
+
+    <p class="paragraph paragraph--important">This is an important paragraph.</p>
+
+    <p class="paragraph paragraph--info">This is an informational paragraph.</p>
+
+    <p class="paragraph paragraph--warning">This is a warning paragraph.</p>
+
+</body>
+</html>
+
+External CSS File (styles.css)
+
+/* External CSS */
+
+/* BEM Naming Convention */
+/* Block: paragraph */
+.paragraph {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Modifier: paragraph--important */
+.paragraph--important {
+    background-color: #ffeeee;
+    font-weight: bold;
+}
+
+/* Modifier: paragraph--info */
+.paragraph--info {
+    background-color: #e5f5ff;
+    color: #0077cc;
+}
+
+/* Modifier: paragraph--warning */
+.paragraph--warning {
+    background-color: #ffe5e5;
+    color: #cc0000;
+    border: 2px solid #cc0000;
+}
+
+
